@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>English Janala</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+  </head>
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+    .font-bangla {
+      font-family: "Hind Siliguri", sans-serif;
+    }
+  </style>
+  <body class="m-0 p-0 box-border overflow-x-hidden">
+    <header>
+      <div class="navbar bg-base-100 shadow-sm px-12 bg-[#BADEFF26]">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-4"
+            >
+              <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+              <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-book-open"></i>Learn</a></li>
+              <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost flex justify-start float-start text-lg md:text-2xl">English <img src="./assets/logo.png" alt=""><span class="font-bangla">জানালা</span></a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-4">
+            <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+            <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-book-open"></i>Learn</a></li>
+            <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="w-11/12 mx-auto flex items-center gap-10 flex-col-reverse md:flex-row mb-10">
+      <div class="flex-1 space-y-5 flex flex-col justify-center items-center text-center md:items-start md:text-left w-full md:w-2/3 mx-auto">
+        <h1 class="text-4xl font-bold"><span class="text-blue-400">English</span> is Easy!!</h1>
+      <p class="font-bangla font-medium leading-relaxed text-lg">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+      <div class="flex flex-col gap-4 w-full md:w-2/3 ">
+        <input type="text" placeholder="Enter Your Name" class="input focus:border-transparent focus:border-blue-400" />
+      <input type="password" placeholder="..................." class="input focus:border-transparent focus:border-blue-400" />
+      <button class="btn btn-primary w-30 mx-auto md:mx-0">Get Started</button>
+      </div>
+      </div>
+      <div class="flex-1">
+        <img class="w-11/12" src="./assets/hero-student.png" alt="">
+      </div>
+    </section>
+
+    <section>
+      <h1 class="text-center text-3xl font-bold pb-10"> <span class="text-blue-400">Let's</span> Learn Vocabularies</h1>
+      <div class="flex justify-center gap-5 my-10 flex-wrap" id="lesson-container">
+        
+      </div>
+    </section>
+
+    <section id="word-container" class="w-11/12 mx-auto my-20 bg-gray-100 p-10 grid grid-cols-1 md:grid-cols-3 gap-5 text-center">
+        
+      
+
+    </section>
+
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>
