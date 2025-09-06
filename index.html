@@ -32,6 +32,10 @@
     .font-bangla {
       font-family: "Hind Siliguri", sans-serif;
     }
+    .active {
+      background-color: #422ad5;
+      color: white;
+    }
   </style>
   <body class="m-0 p-0 box-border overflow-x-hidden">
     <header>
@@ -58,54 +62,173 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-4"
             >
-              <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
-              <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-book-open"></i>Learn</a></li>
-              <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+              <li>
+                <a class="btn btn-outline btn-primary border-2" href="#"
+                  ><i class="fa-solid fa-circle-question"></i>FAQ</a
+                >
+              </li>
+              <li>
+                <a class="btn btn-outline btn-primary border-2" href="#"
+                  ><i class="fa-solid fa-book-open"></i>Learn</a
+                >
+              </li>
+              <li>
+                <a class="btn btn-outline btn-primary border-2" href="#"
+                  ><i class="fa-solid fa-right-from-bracket"></i>Logout</a
+                >
+              </li>
             </ul>
           </div>
-          <a class="btn btn-ghost flex justify-start float-start text-lg md:text-2xl">English <img src="./assets/logo.png" alt=""><span class="font-bangla">জানালা</span></a>
+          <a
+            class="btn btn-ghost flex justify-start float-start text-lg md:text-2xl"
+            >English <img src="./assets/logo.png" alt="" /><span
+              class="font-bangla"
+              >জানালা</span
+            ></a
+          >
         </div>
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal px-1 gap-4">
-            <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
-            <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-book-open"></i>Learn</a></li>
-            <li><a class="btn btn-outline btn-primary border-2" href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+            <li>
+              <a class="btn btn-outline btn-primary border-2" href="#"
+                ><i class="fa-solid fa-circle-question"></i>FAQ</a
+              >
+            </li>
+            <li>
+              <a class="btn btn-outline btn-primary border-2" href="#"
+                ><i class="fa-solid fa-book-open"></i>Learn</a
+              >
+            </li>
+            <li>
+              <a class="btn btn-outline btn-primary border-2" href="#"
+                ><i class="fa-solid fa-right-from-bracket"></i>Logout</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <section class="w-11/12 mx-auto flex items-center gap-10 flex-col-reverse md:flex-row mb-10">
-      <div class="flex-1 space-y-5 flex flex-col justify-center items-center text-center md:items-start md:text-left w-full md:w-2/3 mx-auto">
-        <h1 class="text-4xl font-bold"><span class="text-blue-400">English</span> is Easy!!</h1>
-      <p class="font-bangla font-medium leading-relaxed text-lg">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
-      <div class="flex flex-col gap-4 w-full md:w-2/3 ">
-        <input type="text" placeholder="Enter Your Name" class="input focus:border-transparent focus:border-blue-400" />
-      <input type="password" placeholder="..................." class="input focus:border-transparent focus:border-blue-400" />
-      <button class="btn btn-primary w-30 mx-auto md:mx-0">Get Started</button>
-      </div>
+    <section
+      class="w-11/12 mx-auto flex items-center gap-10 flex-col-reverse md:flex-row mb-10"
+    >
+      <div
+        class="flex-1 space-y-5 flex flex-col justify-center items-center text-center md:items-start md:text-left w-full md:w-2/3 mx-auto"
+      >
+        <h1 class="text-4xl font-bold">
+          <span class="text-blue-400">English</span> is Easy!!
+        </h1>
+        <p class="font-bangla font-medium leading-relaxed text-lg">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
+        <div class="flex flex-col gap-4 w-full md:w-2/3">
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            class="input focus:border-transparent focus:border-blue-400"
+          />
+          <input
+            type="password"
+            placeholder="..................."
+            class="input focus:border-transparent focus:border-blue-400"
+          />
+          <button class="btn btn-primary w-30 mx-auto md:mx-0">
+            Get Started
+          </button>
+        </div>
       </div>
       <div class="flex-1">
-        <img class="w-11/12" src="./assets/hero-student.png" alt="">
+        <img class="w-11/12" src="./assets/hero-student.png" alt="" />
       </div>
     </section>
 
     <section>
-      <h1 class="text-center text-3xl font-bold pb-10"> <span class="text-blue-400">Let's</span> Learn Vocabularies</h1>
-      <div class="flex justify-center gap-5 my-10 flex-wrap" id="lesson-container">
-        
-      </div>
+      <h1 class="text-center text-3xl font-bold pb-10">
+        <span class="text-blue-400">Let's</span> Learn Vocabularies
+      </h1>
+      <div
+        class="flex justify-center gap-5 my-10 flex-wrap"
+        id="lesson-container"
+      ></div>
     </section>
 
-    <section id="word-container" class="w-11/12 mx-auto my-20 bg-gray-100 rounded-lg p-10 grid grid-cols-1 md:grid-cols-3 gap-5 text-center">
-        
+    <section id="spinner" class="flex justify-center items-center hidden">
+      <span class="loading loading-dots loading-xl w-[5%]"></span>
+    </section>
+    <section id="search-container" class="flex justify-center items-center">
+      <div class="join">
+        <div>
+          <label class="input validator join-item">
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </g>
+            </svg>
+            <input id="input-search" class="pr-10" type="text" placeholder="Search Vocabulary" required />
+          </label>
+        </div>
+        <button id="search-btn" class="btn btn-primary px-5 join-item"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </section>
+    <section
+      id="word-container"
+      class="w-11/12 mx-auto my-20 bg-gray-100 rounded-lg p-10 grid grid-cols-1 md:grid-cols-3 gap-5 text-center"
+    >
       <div class="col-span-3 grid-flow-col text-center space-y-5">
-        <p class="font-bangla text-[16px] text-gray-500 ">আপনি এখনো কোন Lesson Select করেন নি</p>
-      <h1 class=" text-xl md:text-3xl font-bold ">একটি Lesson Select করুন।</h1>
+        <p class="font-bangla text-[16px] text-gray-500">
+          আপনি এখনো কোন Lesson Select করেন নি
+        </p>
+        <h1 class="text-xl md:text-3xl font-bold">একটি Lesson Select করুন।</h1>
       </div>
     </section>
 
-
+    <section id="modal">
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="modal-container">
+            <div class="space-y-4">
+              <h1 class="font-bold text-2xl">
+                Eager (<i class="fa-solid fa-microphone-lines"></i> :ইগার)
+              </h1>
+              <div>
+                <p class="font-semibold text-lg">Meaning</p>
+                <p class="font-bangla font-medium text-[16px]">আগ্রহী</p>
+              </div>
+              <div>
+                <p class="font-semibold text-lg">Example</p>
+                <p class="font-normal text-[16px]">
+                  The kids were eager to open their gifts.
+                </p>
+              </div>
+              <div class="">
+                <p class="font-bangla font-semibold text-lg pb-3">
+                  সমার্থক শব্দ গুলো
+                </p>
+                <span class="btn">sy1</span>
+                <span class="btn">sy1</span>
+                <span class="btn">sy1</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </section>
     <script src="./script/index.js"></script>
   </body>
 </html>
